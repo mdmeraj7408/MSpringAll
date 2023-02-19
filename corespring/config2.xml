@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- First bean -->
+	<bean class="com.java.corespring.Student" name="student1">
+
+		<property name="id" value="1234" />
+		<property name="name" value="saddam" />
+		<property name="address" value="Lko" />
+	</bean>
+	<!-- Second beans -->
+	<bean class="com.java.corespring.Student" name="student2">
+		<property name="id" value="1234" />
+		<property name="name" value="saddam" />
+		<property name="address" value="Lko" />
+	</bean>
+
+	<!-- P Schema to initialize Object -->
+	<bean class="com.java.corespring.Student" name="student3"
+		p:id="12556" p:name="Jamshed" p:address="Faizabad" />
+
+	<!-- 4th way use to value tag -->
+	<bean class="com.java.corespring.Student" name="student4">
+		<property name="id">
+			<value>12234</value>
+		</property>
+
+		<property name="name">
+			<value>Safeek</value>
+		</property>
+
+		<property name="address">
+			<value>Basti</value>
+		</property>
+	</bean>
+</beans>
