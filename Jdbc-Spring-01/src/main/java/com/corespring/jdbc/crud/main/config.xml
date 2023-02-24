@@ -22,7 +22,7 @@
  <ref bean="ds"/>
  </property>
  </bean>
-  <bean class="com.java.corespring.jdbc.dao.StudentDaoImpl" name="studentDaoImpl">
+  <bean class="com.java.corespring.jdbc.crud.dao.StudentDaoImpl" name="studentDaoImpl">
   <property name="jdbcTemplate" ref="jdbcTemplate"/>
   </bean>
  <!-- with p schema 
