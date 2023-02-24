@@ -29,7 +29,7 @@ public class UserDao {
 	@Transactional
 	public User getById(int id)
 	{
-		User user= this.hibernateTemplate.load(User.class, id);
+		User user= this.hibernateTemplate.get(User.class, id);
 		return user;
 	}
 	//get all details 
